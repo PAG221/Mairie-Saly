@@ -1,0 +1,3487 @@
+<!doctype html>
+<!-- saved from url=(0045)file:///C:/Users/papea/Downloads/index_3.html -->
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mairie de Saly – Plateforme Citoyenne</title>
+    <meta
+      name="description"
+      content="La plateforme citoyenne officielle de la Mairie de Saly, Région de Thiès, Sénégal. Signalez, suivez et restez informé."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      href="./Mairie de Saly – Plateforme Citoyenne_files/css2"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      /* ============================================================
+       VARIABLES & RESET
+    ============================================================ */
+      :root {
+        --blue: #0b5ed7;
+        --blue-dark: #0847a8;
+        --blue-light: #3d80e8;
+        --green: #20c997;
+        --green-dark: #17a37e;
+        --sand: #f5e6c8;
+        --sand-dark: #e8d3a0;
+        --white: #ffffff;
+        --off-white: #f8f9fa;
+        --text: #1a1a2e;
+        --text-muted: #6b7280;
+        --border: #e5e7eb;
+        --shadow-sm: 0 2px 8px rgba(11, 94, 215, 0.08);
+        --shadow-md: 0 8px 32px rgba(11, 94, 215, 0.12);
+        --shadow-lg: 0 20px 60px rgba(11, 94, 215, 0.16);
+        --radius: 16px;
+        --radius-sm: 8px;
+        --radius-xl: 24px;
+        --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        color: var(--text);
+        background: var(--white);
+        overflow-x: hidden;
+        line-height: 1.6;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      ul {
+        list-style: none;
+      }
+      button {
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+      }
+      input,
+      textarea,
+      select {
+        font-family: inherit;
+      }
+
+      /* ============================================================
+       UTILITIES
+    ============================================================ */
+      .container {
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .section-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(11, 94, 215, 0.08);
+        color: var(--blue);
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 6px 14px;
+        border-radius: 50px;
+        margin-bottom: 14px;
+      }
+
+      .section-tag.green {
+        background: rgba(32, 201, 151, 0.1);
+        color: var(--green-dark);
+      }
+      .section-tag.sand {
+        background: rgba(232, 211, 160, 0.3);
+        color: #8b6914;
+      }
+      .section-tag.white {
+        background: rgba(255, 255, 255, 0.15);
+        color: var(--white);
+      }
+
+      .section-title {
+        font-size: clamp(1.7rem, 4vw, 2.5rem);
+        font-weight: 800;
+        line-height: 1.2;
+        color: var(--text);
+        margin-bottom: 14px;
+      }
+
+      .section-title span {
+        color: var(--blue);
+      }
+      .section-title.white-text {
+        color: var(--white);
+      }
+      .section-title.white-text span {
+        color: var(--green);
+      }
+
+      .section-sub {
+        font-size: 1rem;
+        color: var(--text-muted);
+        max-width: 560px;
+        line-height: 1.7;
+      }
+
+      .section-sub.white-text {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .section-header {
+        margin-bottom: 52px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 14px 28px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: var(--transition);
+        cursor: pointer;
+      }
+
+      .btn i {
+        font-size: 1.1rem;
+      }
+
+      .btn-whatsapp i {
+        font-size: 1.2rem;
+      }
+
+      .btn-primary {
+        background: var(--blue);
+        color: var(--white);
+        box-shadow: 0 4px 20px rgba(11, 94, 215, 0.35);
+      }
+      .btn-primary:hover {
+        background: var(--blue-dark);
+        box-shadow: 0 8px 32px rgba(11, 94, 215, 0.45);
+        transform: translateY(-2px);
+      }
+
+      .btn-whatsapp {
+        background: #25d366;
+        color: var(--white);
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+      }
+      .btn-whatsapp:hover {
+        background: #1ebe5b;
+        box-shadow: 0 8px 32px rgba(37, 211, 102, 0.45);
+        transform: translateY(-2px);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--white);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+      }
+      .btn-outline:hover {
+        background: rgba(255, 255, 255, 0.12);
+        border-color: var(--white);
+      }
+
+      .btn-green {
+        background: var(--green);
+        color: var(--white);
+        box-shadow: 0 4px 20px rgba(32, 201, 151, 0.35);
+      }
+      .btn-green:hover {
+        background: var(--green-dark);
+        transform: translateY(-2px);
+      }
+
+      /* ============================================================
+       SCROLL REVEAL
+    ============================================================ */
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .reveal-delay-1 {
+        transition-delay: 0.1s;
+      }
+      .reveal-delay-2 {
+        transition-delay: 0.2s;
+      }
+      .reveal-delay-3 {
+        transition-delay: 0.3s;
+      }
+      .reveal-delay-4 {
+        transition-delay: 0.4s;
+      }
+
+      /* ============================================================
+       HEADER / NAV
+    ============================================================ */
+      #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+        transition: box-shadow var(--transition);
+      }
+      #header.scrolled {
+        box-shadow: var(--shadow-md);
+      }
+
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 72px;
+        gap: 24px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+      }
+
+      .logo-icon {
+        width: 44px;
+        height: 44px;
+        background: linear-gradient(135deg, var(--blue), var(--blue-light));
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 14px rgba(11, 94, 215, 0.3);
+        color: white;
+      }
+
+      .logo-text {
+        line-height: 1.2;
+      }
+      .logo:hover .logo-icon {
+        transform: rotate(-5deg) scale(1.05);
+        transition: var(--transition);
+      }
+      .logo-text strong {
+        display: block;
+        font-size: 0.95rem;
+        font-weight: 800;
+        color: var(--blue);
+      }
+      .logo-text span {
+        display: block;
+        font-size: 0.68rem;
+        color: var(--text-muted);
+        font-weight: 500;
+        letter-spacing: 0.04em;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .nav-links a {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--text-muted);
+        padding: 8px 14px;
+        border-radius: 8px;
+        transition: var(--transition);
+      }
+      .nav-links a:hover,
+      .nav-links a.active {
+        color: var(--blue);
+        background: rgba(11, 94, 215, 0.07);
+      }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+      }
+
+      .nav-wa {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: #25d366;
+        color: white;
+        padding: 9px 16px;
+        border-radius: 50px;
+        font-size: 0.82rem;
+        font-weight: 600;
+        transition: var(--transition);
+        border: none;
+      }
+      .nav-wa:hover {
+        background: #1ebe5b;
+        transform: translateY(-1px);
+      }
+
+      /* Burger */
+      .burger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        padding: 8px;
+        border-radius: 8px;
+        cursor: pointer;
+        border: 1px solid var(--border);
+      }
+      .burger span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: var(--text);
+        border-radius: 2px;
+        transition: var(--transition);
+      }
+      .burger.open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .burger.open span:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+      }
+      .burger.open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+
+      /* Mobile Nav */
+      .mobile-nav {
+        display: none;
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        z-index: 999;
+        flex-direction: column;
+        padding: 32px 24px;
+        gap: 8px;
+        transform: translateX(100%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .mobile-nav.open {
+        display: flex;
+        transform: translateX(0);
+      }
+      .mobile-nav a {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text);
+        padding: 14px 16px;
+        border-radius: var(--radius-sm);
+        border-bottom: 1px solid var(--border);
+        transition: var(--transition);
+      }
+      .mobile-nav a:hover {
+        color: var(--blue);
+        background: rgba(11, 94, 215, 0.05);
+      }
+      .mobile-nav .mobile-wa {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-decoration: none;
+        background: #25d366;
+        color: white;
+        text-align: center;
+        border: none;
+        font-size: 1rem;
+        border-radius: 50px;
+        padding: 16px;
+      }
+
+      /* ============================================================
+       HERO
+    ============================================================ */
+      #accueil {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding-top: 72px;
+      }
+
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background-image: url("https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1600&q=80");
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+      }
+
+      /* Fallback gradient if image fails */
+      .hero-bg-fallback {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          #0b5ed7 0%,
+          #0847a8 50%,
+          #063299 100%
+        );
+        z-index: 0;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(8, 71, 168, 0.88) 0%,
+          rgba(11, 94, 215, 0.75) 40%,
+          rgba(6, 50, 153, 0.82) 100%
+        );
+        z-index: 1;
+      }
+
+      .hero-pattern {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        opacity: 0.04;
+        background-image: radial-gradient(circle, #fff 1px, transparent 1px);
+        background-size: 30px 30px;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        padding: 100px 0 80px;
+      }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(8px);
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 50px;
+        margin-bottom: 28px;
+      }
+      .hero-badge .dot {
+        width: 7px;
+        height: 7px;
+        background: var(--green);
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.5;
+          transform: scale(1.4);
+        }
+      }
+
+      .hero-title {
+        font-size: clamp(2rem, 5.5vw, 3.8rem);
+        font-weight: 900;
+        color: var(--white);
+        line-height: 1.12;
+        margin-bottom: 20px;
+        max-width: 720px;
+      }
+      .hero-title .highlight {
+        color: var(--green);
+        position: relative;
+      }
+
+      .hero-sub {
+        font-size: clamp(0.95rem, 2vw, 1.15rem);
+        color: rgba(255, 255, 255, 0.82);
+        max-width: 520px;
+        margin-bottom: 40px;
+        line-height: 1.75;
+      }
+
+      .hero-btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-bottom: 64px;
+      }
+
+      .hero-stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+      }
+
+      .hero-stat {
+        color: var(--white);
+      }
+      .hero-stat strong {
+        display: block;
+        font-size: 1.9rem;
+        font-weight: 800;
+        line-height: 1;
+        color: var(--green);
+      }
+      .hero-stat span {
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.7);
+        font-weight: 500;
+      }
+
+      .hero-scroll {
+        position: absolute;
+        bottom: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+      .hero-scroll .arrow {
+        width: 30px;
+        height: 30px;
+        border: 1.5px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: bounce 2s infinite;
+        font-size: 0.8rem;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(6px);
+        }
+      }
+
+      /* ============================================================
+       ACTUALITÉS
+    ============================================================ */
+      #actualites {
+        padding: 100px 0;
+        background: var(--off-white);
+      }
+
+      .news-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 24px;
+      }
+
+      .news-card {
+        background: var(--white);
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow-sm);
+        transition: var(--transition);
+        cursor: pointer;
+      }
+      .news-card:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-4px);
+      }
+
+      .news-card-img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+      .news-card.featured .news-card-img {
+        height: 300px;
+      }
+
+      .news-card-body {
+        padding: 22px;
+      }
+
+      .news-cat {
+        display: inline-block;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 4px 10px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+      }
+      .cat-project {
+        background: rgba(11, 94, 215, 0.1);
+        color: var(--blue);
+      }
+      .cat-event {
+        background: rgba(32, 201, 151, 0.1);
+        color: var(--green-dark);
+      }
+      .cat-annonce {
+        background: rgba(232, 211, 160, 0.4);
+        color: #8b6914;
+      }
+
+      .news-title {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.4;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+      .news-card.featured .news-title {
+        font-size: 1.25rem;
+      }
+
+      .news-excerpt {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .news-meta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 16px;
+        padding-top: 14px;
+        border-top: 1px solid var(--border);
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
+      .news-meta span {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      /* ============================================================
+       SIGNALEMENT
+    ============================================================ */
+      #signalement {
+        padding: 100px 0;
+        background: var(--white);
+      }
+
+      .signal-layout {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 60px;
+        align-items: start;
+      }
+
+      .signal-info {
+      }
+
+      .signal-types {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+
+      .signal-type {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 16px;
+        background: var(--off-white);
+        border-radius: var(--radius-sm);
+        font-size: 0.85rem;
+        font-weight: 500;
+        border: 1px solid var(--border);
+        transition: var(--transition);
+        cursor: pointer;
+      }
+      .signal-type:hover {
+        background: rgba(11, 94, 215, 0.06);
+        border-color: var(--blue);
+        color: var(--blue);
+      }
+      .signal-type .ico {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        color: var(--text);
+      }
+
+      .form-card {
+        background: var(--white);
+        border-radius: var(--radius-xl);
+        padding: 36px;
+        box-shadow: var(--shadow-lg);
+        border: 1px solid var(--border);
+      }
+
+      .form-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .form-row {
+        margin-bottom: 18px;
+      }
+
+      .form-label {
+        display: block;
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 6px;
+        letter-spacing: 0.02em;
+      }
+      .form-label span {
+        color: #e53e3e;
+      }
+
+      .form-input,
+      .form-select,
+      .form-textarea {
+        width: 100%;
+        padding: 12px 16px;
+        border: 1.5px solid var(--border);
+        border-radius: var(--radius-sm);
+        font-size: 0.9rem;
+        color: var(--text);
+        background: var(--off-white);
+        transition: var(--transition);
+        outline: none;
+      }
+      .form-input:focus,
+      .form-select:focus,
+      .form-textarea:focus {
+        border-color: var(--blue);
+        background: var(--white);
+        box-shadow: 0 0 0 3px rgba(11, 94, 215, 0.1);
+      }
+      .form-textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      .form-submit i {
+        font-size: 1rem;
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      .upload-zone {
+        border: 2px dashed var(--border);
+        border-radius: var(--radius-sm);
+        padding: 24px;
+        text-align: center;
+        cursor: pointer;
+        transition: var(--transition);
+        background: var(--off-white);
+      }
+      .upload-zone:hover {
+        border-color: var(--blue);
+        background: rgba(11, 94, 215, 0.03);
+      }
+      .upload-zone .ico {
+        font-size: 2rem;
+        margin-bottom: 8px;
+        color: var(--blue);
+      }
+      .upload-zone p {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+      }
+      .upload-zone strong {
+        color: var(--blue);
+      }
+
+      .form-submit {
+        width: 100%;
+        padding: 15px;
+        background: linear-gradient(135deg, var(--blue), var(--blue-light));
+        color: var(--white);
+        border: none;
+        border-radius: var(--radius-sm);
+        font-size: 0.95rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 8px;
+        box-shadow: 0 4px 20px rgba(11, 94, 215, 0.35);
+      }
+      .form-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 32px rgba(11, 94, 215, 0.45);
+      }
+      .form-submit:active {
+        transform: translateY(0);
+      }
+
+      /* Success modal */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+      }
+      .modal-overlay.show {
+        opacity: 1;
+        pointer-events: all;
+      }
+      .modal-box {
+        background: var(--white);
+        border-radius: var(--radius-xl);
+        padding: 48px 36px;
+        text-align: center;
+        max-width: 420px;
+        width: 90%;
+        transform: scale(0.9);
+        transition: transform 0.3s;
+      }
+      .modal-overlay.show .modal-box {
+        transform: scale(1);
+      }
+      .modal-icon {
+        font-size: 3.5rem;
+        margin-bottom: 16px;
+      }
+      .modal-title {
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: var(--text);
+        margin-bottom: 10px;
+      }
+      .modal-text {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+        margin-bottom: 28px;
+      }
+      .modal-close {
+        background: var(--blue);
+        color: white;
+        border: none;
+        padding: 12px 32px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+      .modal-close:hover {
+        background: var(--blue-dark);
+      }
+
+      /* ============================================================
+       SUIVI DES ACTIONS
+    ============================================================ */
+      #suivi {
+        padding: 100px 0;
+        background: var(--off-white);
+      }
+
+      .tracker-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+        margin-bottom: 40px;
+      }
+
+      .tracker-stats {
+        display: flex;
+        gap: 16px;
+        flex-shrink: 0;
+      }
+
+      .tracker-stat {
+        text-align: center;
+        background: var(--white);
+        border-radius: var(--radius-sm);
+        padding: 16px 20px;
+        box-shadow: var(--shadow-sm);
+        min-width: 80px;
+      }
+      .tracker-stat strong {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 800;
+        line-height: 1;
+      }
+      .tracker-stat span {
+        font-size: 0.72rem;
+        color: var(--text-muted);
+        font-weight: 500;
+      }
+      .tracker-stat.blue strong {
+        color: var(--blue);
+      }
+      .tracker-stat.orange strong {
+        color: #f6993f;
+      }
+      .tracker-stat.green strong {
+        color: var(--green);
+      }
+
+      .signalement-list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .sig-item {
+        background: var(--white);
+        border-radius: var(--radius);
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        box-shadow: var(--shadow-sm);
+        border-left: 4px solid transparent;
+        transition: var(--transition);
+      }
+      .sig-item:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateX(4px);
+      }
+      .sig-item.pending {
+        border-left-color: #f6993f;
+      }
+      .sig-item.inprogress {
+        border-left-color: var(--blue);
+      }
+      .sig-item.resolved {
+        border-left-color: var(--green);
+      }
+
+      .sig-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        color: var(--text);
+      }
+      .sig-item.pending .sig-icon {
+        background: rgba(246, 153, 63, 0.1);
+      }
+      .sig-item.inprogress .sig-icon {
+        background: rgba(11, 94, 215, 0.1);
+      }
+      .sig-item.resolved .sig-icon {
+        background: rgba(32, 201, 151, 0.1);
+      }
+
+      .sig-body {
+        flex: 1;
+        min-width: 0;
+      }
+      .sig-title {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 3px;
+      }
+      .sig-meta {
+        font-size: 0.78rem;
+        color: var(--text-muted);
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .sig-meta span {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .sig-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px 12px;
+        border-radius: 50px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        flex-shrink: 0;
+      }
+      .sig-badge.pending {
+        background: rgba(246, 153, 63, 0.12);
+        color: #d97706;
+      }
+      .sig-badge.inprogress {
+        background: rgba(11, 94, 215, 0.1);
+        color: var(--blue);
+      }
+      .sig-badge.resolved {
+        background: rgba(32, 201, 151, 0.12);
+        color: var(--green-dark);
+      }
+
+      .sig-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .pending .sig-dot {
+        background: #f6993f;
+      }
+      .inprogress .sig-dot {
+        background: var(--blue);
+      }
+      .resolved .sig-dot {
+        background: var(--green);
+      }
+
+      /* ============================================================
+       WHATSAPP SECTION
+    ============================================================ */
+      #whatsapp {
+        padding: 100px 0;
+        background: linear-gradient(
+          135deg,
+          #064bc5 0%,
+          var(--blue) 50%,
+          #1773e0 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+      #whatsapp::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.05) 1px,
+          transparent 1px
+        );
+        background-size: 30px 30px;
+      }
+      #whatsapp::after {
+        content: "";
+        position: absolute;
+        top: -80px;
+        right: -80px;
+        width: 360px;
+        height: 360px;
+        background: rgba(32, 201, 151, 0.12);
+        border-radius: 50%;
+      }
+
+      .wa-inner {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      .wa-content {
+      }
+      .wa-phone {
+        font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+        font-weight: 900;
+        color: var(--white);
+        margin: 16px 0;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .wa-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: var(--radius-xl);
+        padding: 36px;
+        text-align: center;
+      }
+      .wa-card .wa-icon {
+        color: #25d366;
+      }
+
+      .wa-card .wa-icon {
+        font-size: 4rem;
+        margin-bottom: 16px;
+        display: block;
+      }
+      .wa-card-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 10px;
+      }
+      .wa-card-text {
+        font-size: 0.88rem;
+        color: rgba(255, 255, 255, 0.75);
+        margin-bottom: 24px;
+        line-height: 1.6;
+      }
+      .wa-big-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: #25d366;
+        color: white;
+        padding: 16px 32px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 1rem;
+        transition: var(--transition);
+        box-shadow: 0 4px 24px rgba(37, 211, 102, 0.4);
+      }
+      .wa-big-btn:hover {
+        background: #1ebe5b;
+        box-shadow: 0 8px 36px rgba(37, 211, 102, 0.5);
+        transform: translateY(-2px);
+      }
+      .wa-steps {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .wa-step {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 0.9rem;
+      }
+      .wa-step-num {
+        width: 30px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: white;
+        flex-shrink: 0;
+      }
+
+      /* ============================================================
+       POURQUOI CETTE PLATEFORME
+    ============================================================ */
+      #pourquoi {
+        padding: 100px 0;
+        background: var(--white);
+      }
+
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+
+      .why-card {
+        background: var(--off-white);
+        border-radius: var(--radius);
+        padding: 32px 24px;
+        border: 1px solid var(--border);
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+      }
+      .why-card::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--blue), var(--green));
+        transform: scaleX(0);
+        transition: var(--transition);
+      }
+      .why-card:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-4px);
+        background: var(--white);
+      }
+      .why-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .why-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+      }
+      .why-card:nth-child(1) .why-icon {
+        background: rgba(11, 94, 215, 0.1);
+      }
+      .why-card:nth-child(2) .why-icon {
+        background: rgba(32, 201, 151, 0.1);
+      }
+      .why-card:nth-child(3) .why-icon {
+        background: rgba(245, 230, 200, 0.6);
+      }
+      .why-card:nth-child(4) .why-icon {
+        background: rgba(246, 153, 63, 0.1);
+      }
+
+      .why-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: var(--text);
+      }
+      .why-text {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        line-height: 1.65;
+      }
+
+      /* ============================================================
+       CONTACT
+    ============================================================ */
+      #contact {
+        padding: 100px 0;
+        background: var(--off-white);
+      }
+
+      .contact-layout {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 60px;
+        align-items: start;
+      }
+
+      .contact-info-card {
+        background: var(--white);
+        border-radius: var(--radius-xl);
+        padding: 36px;
+        box-shadow: var(--shadow-sm);
+        border: 1px solid var(--border);
+      }
+
+      .contact-info-item {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        padding: 18px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .contact-info-item:last-child {
+        border-bottom: none;
+      }
+
+      .ci-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        background: rgba(11, 94, 215, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+        color: var(--blue);
+      }
+      .ci-label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: var(--text-muted);
+        margin-bottom: 3px;
+      }
+      .ci-value {
+        font-size: 0.92rem;
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      .map-wrapper {
+        border-radius: var(--radius);
+        overflow: hidden;
+        margin-top: 24px;
+        box-shadow: var(--shadow-sm);
+      }
+      .map-wrapper iframe {
+        width: 100%;
+        height: 220px;
+        border: none;
+        display: block;
+      }
+
+      .contact-right {
+      }
+
+      .contact-form-card {
+        background: var(--white);
+        border-radius: var(--radius-xl);
+        padding: 40px;
+        box-shadow: var(--shadow-md);
+        border: 1px solid var(--border);
+      }
+
+      /* ============================================================
+       FOOTER
+    ============================================================ */
+      #footer {
+        background: #0d1117;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .footer-top {
+        padding: 72px 0 48px;
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr 1fr;
+        gap: 48px;
+      }
+
+      .footer-brand {
+      }
+      .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+      .footer-logo-icon {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, var(--blue), var(--blue-light));
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        color: white;
+      }
+      .footer-logo-text strong {
+        display: block;
+        font-size: 0.95rem;
+        font-weight: 800;
+        color: var(--white);
+      }
+      .footer-logo-text span {
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .footer-desc {
+        font-size: 0.85rem;
+        line-height: 1.7;
+        margin-bottom: 24px;
+        max-width: 280px;
+      }
+
+      .footer-socials {
+        display: flex;
+        gap: 10px;
+      }
+      .footer-social {
+        width: 38px;
+        height: 38px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        transition: var(--transition);
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .footer-social:hover {
+        background: var(--blue);
+        color: white;
+      }
+
+      .footer-col-title {
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--white);
+        margin-bottom: 18px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .footer-links a {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.55);
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .footer-links a:hover {
+        color: var(--green);
+      }
+      .footer-links a::before {
+        content: "\f061";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 0.65rem;
+        opacity: 0.5;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .footer-bottom p {
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.35);
+      }
+      .footer-bottom .made-with {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.35);
+      }
+
+      /* ============================================================
+       FLOATING WHATSAPP BUTTON
+    ============================================================ */
+      .fab-wa {
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        z-index: 1000;
+        width: 58px;
+        height: 58px;
+        background: #25d366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+        transition: var(--transition);
+        animation: floatIn 1s ease 2s both;
+      }
+      .fab-wa:hover {
+        background: #1ebe5b;
+        transform: scale(1.1) rotate(5deg);
+        box-shadow: 0 8px 32px rgba(37, 211, 102, 0.6);
+      }
+      .fab-wa i {
+        color: white;
+        position: relative;
+        z-index: 2;
+      }
+
+      .fab-wa::before {
+        content: "";
+        position: absolute;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        background: rgba(37, 211, 102, 0.4);
+        animation: ping 2s infinite;
+      }
+      @keyframes ping {
+        0% {
+          transform: scale(1);
+          opacity: 0.6;
+        }
+        100% {
+          transform: scale(1.7);
+          opacity: 0;
+        }
+      }
+      @keyframes floatIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px) scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      .fab-tooltip {
+        position: absolute;
+        right: 70px;
+        background: #1a1a2e;
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 500;
+        white-space: nowrap;
+        padding: 8px 14px;
+        border-radius: 8px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+      }
+      .fab-wa:hover .fab-tooltip {
+        opacity: 1;
+      }
+
+      /* ============================================================
+       BACK TO TOP
+    ============================================================ */
+      .back-top {
+        position: fixed;
+        bottom: 28px;
+        left: 28px;
+        z-index: 1000;
+        width: 44px;
+        height: 44px;
+        background: var(--blue);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        box-shadow: var(--shadow-md);
+        opacity: 0;
+        transform: translateY(20px);
+        transition: var(--transition);
+        pointer-events: none;
+      }
+
+      /* Météo et Marées Widget */
+      .weather-widget {
+        display: inline-flex;
+        gap: 32px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        padding: 16px 28px;
+        border-radius: var(--radius);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      }
+      .ww-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .ww-icon {
+        font-size: 1.4rem;
+        color: var(--green);
+      }
+      .ww-info {
+        display: flex;
+        flex-direction: column;
+      }
+      .ww-label {
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 600;
+      }
+      .ww-value {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--white);
+      }
+
+      .back-top.show {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+      }
+      .back-top:hover {
+        background: var(--blue-dark);
+        transform: translateY(-2px);
+      }
+
+      /* ============================================================
+       TOAST NOTIFICATION
+    ============================================================ */
+      .toast {
+        position: fixed;
+        top: 92px;
+        right: 24px;
+        z-index: 9998;
+        background: var(--white);
+        border-radius: var(--radius-sm);
+        padding: 14px 20px;
+        box-shadow: var(--shadow-lg);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 0.88rem;
+        font-weight: 500;
+        border-left: 4px solid var(--green);
+        transform: translateX(110%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        max-width: 340px;
+      }
+      .toast.show {
+        transform: translateX(0);
+      }
+
+      /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+      @media (max-width: 1024px) {
+        .news-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .news-card.featured {
+          grid-column: 1 / -1;
+        }
+        .why-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .footer-top {
+          grid-template-columns: 1fr 1fr;
+          gap: 36px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .nav-links,
+        .nav-wa {
+          display: none;
+        }
+        .burger {
+          display: flex;
+        }
+
+        #actualites,
+        #signalement,
+        #suivi,
+        #whatsapp,
+        #pourquoi,
+        #contact {
+          padding: 50px 0;
+        }
+
+        .news-grid {
+          grid-template-columns: 1fr;
+        }
+        .signal-layout {
+          grid-template-columns: 1fr;
+        }
+        .signal-types {
+          grid-template-columns: 1fr 1fr;
+        }
+        .wa-inner {
+          grid-template-columns: 1fr;
+        }
+        .contact-layout {
+          grid-template-columns: 1fr;
+        }
+        .contact-form-card {
+          padding: 28px 20px;
+        }
+
+        #accueil {
+          min-height: auto;
+          padding-top: 100px;
+          padding-bottom: 50px;
+        }
+        .hero-title {
+          font-size: 2.2rem;
+        }
+        .hero-btns {
+          margin-bottom: 40px;
+        }
+
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+        .why-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .footer-top {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          text-align: center;
+        }
+        .tracker-header {
+          flex-direction: column;
+        }
+        .tracker-stats {
+          width: 100%;
+          justify-content: space-between;
+        }
+        .hero-stats {
+          gap: 20px;
+        }
+        .form-card {
+          padding: 24px 18px;
+        }
+        .sig-item {
+          flex-wrap: wrap;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .signal-types {
+          grid-template-columns: 1fr;
+        }
+        .why-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+        }
+        .why-card {
+          padding: 16px;
+        }
+        .why-icon {
+          width: 40px;
+          height: 40px;
+          font-size: 1.2rem;
+          margin-bottom: 12px;
+        }
+        .why-title {
+          font-size: 0.9rem;
+        }
+        .why-text {
+          font-size: 0.75rem;
+        }
+
+        .news-card-img,
+        .news-card.featured .news-card-img {
+          height: 180px;
+        }
+
+        .hero-btns {
+          flex-direction: column;
+        }
+        .hero-btns .btn {
+          justify-content: center;
+        }
+        .tracker-stats {
+          flex-wrap: wrap;
+        }
+        .fab-wa {
+          width: 52px;
+          height: 52px;
+          bottom: 20px;
+          right: 20px;
+        }
+      }
+    </style>
+    <style>
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============================================================
+       FLOATING WHATSAPP BUTTON
+  ============================================================ -->
+    <a
+      href="https://wa.me/221772636317?text=Bonjour%2C+je+souhaite+contacter+la+mairie+de+Saly"
+      target="_blank"
+      rel="noopener"
+      class="fab-wa"
+      aria-label="Contacter sur WhatsApp"
+    >
+      <span class="fab-tooltip">Contacter la mairie</span>
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-top show" id="backTop" aria-label="Retour en haut">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ============================================================
+       TOAST NOTIFICATION
+  ============================================================ -->
+    <div class="toast" id="toast" role="alert">
+      <i
+        class="fa-solid fa-circle-check"
+        style="color: var(--green); font-size: 1.2rem"
+      ></i>
+      <span id="toast-msg">Signalement envoyé avec succès !</span>
+    </div>
+
+    <!-- ============================================================
+       SUCCESS MODAL
+  ============================================================ -->
+    <div
+      class="modal-overlay"
+      id="modalOverlay"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-box">
+        <div class="modal-icon">
+          <i class="fa-solid fa-circle-check" style="color: var(--green)"></i>
+        </div>
+        <h3 class="modal-title">Signalement reçu !</h3>
+        <p class="modal-text">
+          Votre signalement a été transmis à la mairie de Saly. Nous vous
+          contacterons dans les plus brefs délais pour vous informer des suites
+          données.
+        </p>
+        <button class="modal-close" id="modalClose">Fermer</button>
+      </div>
+    </div>
+
+    <!-- ============================================================
+       HEADER
+  ============================================================ -->
+    <header id="header" role="banner" class="scrolled">
+      <div class="container">
+        <nav class="nav-inner" aria-label="Navigation principale">
+          <!-- Logo -->
+          <a href="#accueil" class="logo" aria-label="Mairie de Saly – Accueil">
+            <div class="logo-icon" aria-hidden="true">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div class="logo-text">
+              <strong>Mairie de Saly</strong>
+              <span>Plateforme Citoyenne</span>
+            </div>
+          </a>
+
+          <!-- Desktop Nav -->
+          <ul class="nav-links" role="list">
+            <li>
+              <a href="#accueil">Accueil</a>
+            </li>
+            <li>
+              <a href="#actualites">Actualités</a>
+            </li>
+            <li>
+              <a href="#signalement">Signalement</a>
+            </li>
+            <li>
+              <a href="#suivi">Suivi</a>
+            </li>
+            <li>
+              <a href="#contact" class="active">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Actions -->
+          <div class="nav-actions">
+            <a
+              href="https://wa.me/221772636317?text=Bonjour%2C+je+souhaite+contacter+la+mairie+de+Saly"
+              target="_blank"
+              rel="noopener"
+              class="nav-wa"
+              aria-label="WhatsApp officiel"
+            >
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <button
+              class="burger"
+              id="burgerBtn"
+              aria-label="Menu"
+              aria-expanded="false"
+              aria-controls="mobileNav"
+            >
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+        <a href="#accueil" class="mobile-link"
+          ><i class="fa-solid fa-house"></i> Accueil</a
+        >
+        <a href="#actualites" class="mobile-link"
+          ><i class="fa-solid fa-bullhorn"></i> Actualités</a
+        >
+        <a href="#signalement" class="mobile-link"
+          ><i class="fa-solid fa-envelope-open-text"></i> Signalement</a
+        >
+        <a href="#suivi" class="mobile-link"
+          ><i class="fa-solid fa-chart-line"></i> Suivi des actions</a
+        >
+        <a href="#pourquoi" class="mobile-link"
+          ><i class="fa-solid fa-lightbulb"></i> Notre mission</a
+        >
+        <a href="#contact" class="mobile-link"
+          ><i class="fa-solid fa-phone"></i> Contact</a
+        >
+        <a
+          href="https://wa.me/221772636317?text=Bonjour%2C+je+souhaite+contacter+la+mairie+de+Saly"
+          target="_blank"
+          rel="noopener"
+          class="mobile-wa"
+          ><i class="fa-brands fa-whatsapp"></i> Contacter sur WhatsApp</a
+        >
+      </nav>
+    </header>
+
+    <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+    <section id="accueil" aria-label="Accueil">
+      <div class="hero-bg-fallback"></div>
+      <div
+        class="hero-bg"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&amp;q=80&quot;);
+          transform: translateY(146.25px);
+        "
+      ></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-pattern"></div>
+
+      <div class="hero-content">
+        <div class="container">
+          <!-- Météo et Marées pour les pêcheurs -->
+          <div class="weather-widget reveal visible">
+            <div class="ww-item">
+              <div class="ww-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+              <div class="ww-info">
+                <span class="ww-label">Météo Saly</span>
+                <span class="ww-value">28°C · Ensoleillé</span>
+              </div>
+            </div>
+            <div class="ww-item">
+              <div class="ww-icon"><i class="fa-solid fa-wind"></i></div>
+              <div class="ww-info">
+                <span class="ww-label">Vent</span>
+                <span class="ww-value">14 kt NW</span>
+              </div>
+            </div>
+            <div class="ww-item">
+              <div class="ww-icon"><i class="fa-solid fa-water"></i></div>
+              <div class="ww-info">
+                <span class="ww-label">Marée Basse</span>
+                <span class="ww-value">09:42</span>
+              </div>
+            </div>
+            <div class="ww-item">
+              <div class="ww-icon">
+                <i class="fa-solid fa-water-ladder"></i>
+              </div>
+              <div class="ww-info">
+                <span class="ww-label">Marée Haute</span>
+                <span class="ww-value">16:15</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Saly · Région de Thiès · Sénégal
+          </div>
+
+          <h1 class="hero-title">
+            Votre mairie, plus<br />
+            <span class="highlight">proche de vous</span><br />
+            à Saly
+          </h1>
+
+          <p class="hero-sub">
+            Signalez des problèmes, suivez leur résolution et restez informé des
+            actions de votre mairie en temps réel. Une plateforme conçue pour et
+            par les citoyens de Saly.
+          </p>
+
+          <div class="hero-btns">
+            <a href="#signalement" class="btn btn-primary">
+              <i class="fa-solid fa-envelope-open-text"></i> Signaler un
+              problème
+            </a>
+            <a
+              href="https://wa.me/221772636317?text=Bonjour%2C+je+souhaite+contacter+la+mairie+de+Saly"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-whatsapp"
+            >
+              <i class="fa-brands fa-whatsapp"></i> Contacter sur WhatsApp
+            </a>
+            <a href="#suivi" class="btn btn-outline">
+              <i class="fa-solid fa-chart-line"></i> Voir le suivi
+            </a>
+          </div>
+
+          <div class="hero-stats" role="list" aria-label="Statistiques">
+            <div class="hero-stat" role="listitem">
+              <strong data-suffix="+">340+</strong>
+              <span>Signalements traités</span>
+            </div>
+            <div class="hero-stat" role="listitem">
+              <strong data-suffix="%">82%</strong>
+              <span>Taux de résolution</span>
+            </div>
+            <div class="hero-stat" role="listitem">
+              <strong data-suffix="h">48h</strong>
+              <span>Délai moyen de réponse</span>
+            </div>
+            <div class="hero-stat" role="listitem">
+              <strong data-suffix="+">1 200+</strong>
+              <span>Citoyens engagés</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Découvrir</span>
+        <div class="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       ACTUALITÉS
+  ============================================================ -->
+    <section id="actualites" aria-labelledby="actualites-title">
+      <div class="container">
+        <div class="section-header reveal visible">
+          <div class="section-tag">
+            <i class="fa-solid fa-bullhorn"></i> Actualités locales
+          </div>
+          <h2 class="section-title" id="actualites-title">
+            Les <span>dernières nouvelles</span><br />de votre commune
+          </h2>
+          <p class="section-sub">
+            Restez informé des projets, événements et annonces importantes de la
+            Mairie de Saly.
+          </p>
+        </div>
+
+        <div class="news-grid">
+          <!-- Featured -->
+          <article class="news-card featured reveal reveal-delay-1 visible">
+            <img
+              src="front.jpeg"
+              alt=""
+              class="news-card-img"
+              loading="lazy"
+              onerror="this.style.background=&#39;linear-gradient(135deg,#0B5ED7,#20C997)&#39;;this.alt=&#39;&#39;;"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgb(11, 94, 215),
+                  rgb(32, 201, 151)
+                );
+              "
+            />
+            <div class="news-card-body">
+              <span class="news-cat cat-project"
+                ><i class="fa-solid fa-trowel-bricks"></i> Projet
+                municipal</span
+              >
+              <h3 class="news-title">
+                Rénovation du front de mer : les travaux débutent ce mois de mai
+              </h3>
+              <p class="news-excerpt">
+                La mairie de Saly lance officiellement les travaux de rénovation
+                du front de mer. Ce projet ambitieux de 450 millions de FCFA
+                vise à moderniser les infrastructures touristiques et à
+                améliorer l'accès aux plages pour les résidents et les
+                visiteurs. Les travaux dureront 8 mois.
+              </p>
+              <div class="news-meta">
+                <span
+                  ><i class="fa-solid fa-calendar-day"></i> 18 avril 2025</span
+                >
+                <span><i class="fa-solid fa-clock"></i> 3 min de lecture</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="news-card reveal reveal-delay-2 visible">
+            <img
+              src="art.jpeg"
+              alt="Festival culturel de Saly"
+              class="news-card-img"
+              loading="lazy"
+              onerror="this.style.background=&#39;linear-gradient(135deg,#20C997,#0B5ED7)&#39;;this.alt=&#39;&#39;;"
+            />
+            <div class="news-card-body">
+              <span class="news-cat cat-event"
+                ><i class="fa-solid fa-star"></i> Événement</span
+              >
+              <h3 class="news-title">
+                Festival des arts et cultures de Saly — Édition 2025
+              </h3>
+              <p class="news-excerpt">
+                Trois jours de musique, de danse et de gastronomie sénégalaise
+                au cœur de Saly. Ouvert à tous, entrée gratuite pour les
+                résidents.
+              </p>
+              <div class="news-meta">
+                <span
+                  ><i class="fa-solid fa-calendar-day"></i> 10 avril 2025</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="news-card reveal reveal-delay-3 visible">
+            <img
+              src="dechet.jpeg"
+              alt="Nouvelle déchetterie municipale"
+              class="news-card-img"
+              loading="lazy"
+              onerror="this.style.background=&#39;linear-gradient(135deg,#F5E6C8,#0B5ED7)&#39;;this.alt=&#39;&#39;;"
+            />
+            <div class="news-card-body">
+              <span class="news-cat cat-annonce"
+                ><i class="fa-solid fa-circle-exclamation"></i> Annonce</span
+              >
+              <h3 class="news-title">
+                Ouverture de la nouvelle déchetterie municipale du quartier Saly
+                Nord
+              </h3>
+              <p class="news-excerpt">
+                La mairie inaugure une nouvelle déchetterie pour améliorer la
+                gestion des déchets et préserver l'environnement côtier.
+              </p>
+              <div class="news-meta">
+                <span
+                  ><i class="fa-solid fa-calendar-day"></i> 5 avril 2025</span
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SIGNALEMENT CITOYEN
+  ============================================================ -->
+    <section id="signalement" aria-labelledby="signalement-title">
+      <div class="container">
+        <div class="signal-layout">
+          <!-- Left Info -->
+          <div class="signal-info">
+            <div class="reveal visible">
+              <div class="section-tag">
+                <i class="fa-solid fa-envelope-open-text"></i> Signalement
+                citoyen
+              </div>
+              <h2 class="section-title" id="signalement-title">
+                Signalez un<br /><span>problème</span> dans<br />votre quartier
+              </h2>
+              <p class="section-sub">
+                Votre signalement est directement transmis aux équipes
+                municipales. Nous nous engageons à vous répondre dans les 48
+                heures.
+              </p>
+            </div>
+
+            <div class="signal-types reveal visible">
+              <div class="signal-type">
+                <div class="ico" style="background: rgba(246, 153, 63, 0.12)">
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                Éclairage public
+              </div>
+              <div class="signal-type">
+                <div class="ico" style="background: rgba(11, 94, 215, 0.1)">
+                  <i class="fa-solid fa-road"></i>
+                </div>
+                Routes &amp; voirie
+              </div>
+              <div class="signal-type">
+                <div class="ico" style="background: rgba(32, 201, 151, 0.1)">
+                  <i class="fa-solid fa-trash-can"></i>
+                </div>
+                Déchets &amp; propreté
+              </div>
+              <div class="signal-type">
+                <div class="ico" style="background: rgba(220, 38, 38, 0.1)">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                Sécurité publique
+              </div>
+              <div class="signal-type">
+                <div class="ico" style="background: rgba(139, 105, 20, 0.1)">
+                  <i class="fa-solid fa-droplet"></i>
+                </div>
+                Eau &amp; assainissement
+              </div>
+              <div class="signal-type">
+                <div class="ico" style="background: rgba(11, 94, 215, 0.1)">
+                  <i class="fa-solid fa-leaf"></i>
+                </div>
+                Espaces verts
+              </div>
+            </div>
+
+            <div
+              class="reveal visible"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(11, 94, 215, 0.06),
+                  rgba(32, 201, 151, 0.06)
+                );
+                border-radius: var(--radius);
+                padding: 24px;
+                border: 1px solid var(--border);
+              "
+            >
+              <p
+                style="
+                  font-size: 0.85rem;
+                  color: var(--text-muted);
+                  line-height: 1.7;
+                "
+              >
+                <strong style="color: var(--blue)"
+                  ><i class="fa-solid fa-lightbulb"></i> Bon à savoir :</strong
+                >
+                Vous pouvez aussi signaler directement via WhatsApp en envoyant
+                une photo avec votre localisation au
+                <a
+                  href="https://wa.me/221772636317"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: var(--blue); font-weight: 600"
+                  >+221 77 263 63 17</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Form Card -->
+          <div class="form-card reveal reveal-delay-2 visible">
+            <div class="form-title">
+              <i
+                class="fa-solid fa-pen-to-square"
+                style="color: var(--blue); margin-right: 10px"
+              ></i>
+              Nouveau signalement
+            </div>
+
+            <form id="signalForm" novalidate="">
+              <div class="form-grid">
+                <div class="form-row">
+                  <label class="form-label" for="sig-nom"
+                    >Nom complet <span>*</span></label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="sig-nom"
+                    name="nom"
+                    placeholder="Votre nom"
+                    required=""
+                  />
+                </div>
+                <div class="form-row">
+                  <label class="form-label" for="sig-tel"
+                    >Téléphone <span>*</span></label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="sig-tel"
+                    name="tel"
+                    placeholder="+221 7X XXX XX XX"
+                    required=""
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="sig-quartier"
+                  >Quartier <span>*</span></label
+                >
+                <select
+                  class="form-select"
+                  id="sig-quartier"
+                  name="quartier"
+                  required=""
+                >
+                  <option value="">-- Sélectionnez votre quartier --</option>
+                  <option>Saly Portudal</option>
+                  <option>Saly Nord</option>
+                  <option>Saly Centre</option>
+                  <option>Saly Sud</option>
+                  <option>Ngaparou</option>
+                  <option>Somone</option>
+                  <option>Pointe Sarène</option>
+                  <option>Autre quartier</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="sig-type"
+                  >Type de problème <span>*</span></label
+                >
+                <select
+                  class="form-select"
+                  id="sig-type"
+                  name="type"
+                  required=""
+                >
+                  <option value="">-- Choisissez le type --</option>
+                  <option>💡 Éclairage public</option>
+                  <option>🛣️ Routes &amp; voirie</option>
+                  <option>🗑️ Déchets &amp; propreté</option>
+                  <option>🚨 Sécurité publique</option>
+                  <option>🌊 Eau &amp; assainissement</option>
+                  <option>🌿 Espaces verts</option>
+                  <option>🏗️ Infrastructures</option>
+                  <option>🐾 Nuisances sonores / animales</option>
+                  <option>📶 Autre</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="sig-desc"
+                  >Description <span>*</span></label
+                >
+                <textarea
+                  class="form-textarea"
+                  id="sig-desc"
+                  name="description"
+                  placeholder="Décrivez le problème en détail : localisation précise, urgence, impacts..."
+                  required=""
+                ></textarea>
+              </div>
+
+              <div class="form-row">
+                <label class="form-label">Photo (optionnelle)</label>
+                <div
+                  class="upload-zone"
+                  id="uploadZone"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Cliquer pour ajouter une photo"
+                >
+                  <div class="ico">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                  </div>
+                  <p><strong>Cliquez ou glissez</strong> une photo ici</p>
+                  <p style="margin-top: 4px; font-size: 0.75rem">
+                    JPG, PNG, HEIC — max 10 MB
+                  </p>
+                </div>
+                <input
+                  type="file"
+                  id="sig-photo"
+                  name="photo"
+                  accept="image/*"
+                  style="display: none"
+                />
+              </div>
+
+              <button type="submit" class="form-submit">
+                <i class="fa-solid fa-paper-plane"></i> &nbsp; Envoyer le
+                signalement
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SUIVI DES ACTIONS
+  ============================================================ -->
+    <section id="suivi" aria-labelledby="suivi-title">
+      <div class="container">
+        <div class="tracker-header">
+          <div class="reveal visible">
+            <div class="section-tag green">
+              <i class="fa-solid fa-chart-line"></i> Suivi en temps réel
+            </div>
+            <h2 class="section-title" id="suivi-title">
+              Transparence &amp;<br /><span>suivi des actions</span>
+            </h2>
+          </div>
+          <div
+            class="tracker-stats reveal reveal-delay-1 visible"
+            role="list"
+            aria-label="Statistiques des signalements"
+          >
+            <div class="tracker-stat blue" role="listitem">
+              <strong>12</strong>
+              <span>En attente</span>
+            </div>
+            <div class="tracker-stat orange" role="listitem">
+              <strong>8</strong>
+              <span>En cours</span>
+            </div>
+            <div class="tracker-stat green" role="listitem">
+              <strong>320</strong>
+              <span>Résolus</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="signalement-list"
+          role="list"
+          aria-label="Liste des signalements"
+        >
+          <div class="sig-item inprogress reveal visible" role="listitem">
+            <div class="sig-icon"><i class="fa-solid fa-road"></i></div>
+            <div class="sig-body">
+              <p class="sig-title">
+                Nid-de-poule dangereux sur l'axe principal de Saly Nord
+              </p>
+              <div class="sig-meta">
+                <span>📍 Saly Nord</span>
+                <span>📅 14 avril 2025</span>
+                <span>👤 Moussa D.</span>
+              </div>
+            </div>
+            <div class="sig-badge inprogress">
+              <span class="sig-dot"></span> En cours
+            </div>
+          </div>
+
+          <div
+            class="sig-item pending reveal reveal-delay-1 visible"
+            role="listitem"
+          >
+            <div class="sig-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="sig-body">
+              <p class="sig-title">
+                Panne d'éclairage public — Rue des Baobabs, Saly Centre
+              </p>
+              <div class="sig-meta">
+                <span>📍 Saly Centre</span>
+                <span>📅 16 avril 2025</span>
+                <span>👤 Fatou S.</span>
+              </div>
+            </div>
+            <div class="sig-badge pending">
+              <span class="sig-dot"></span> En attente
+            </div>
+          </div>
+
+          <div
+            class="sig-item resolved reveal reveal-delay-2 visible"
+            role="listitem"
+          >
+            <div class="sig-icon"><i class="fa-solid fa-trash-can"></i></div>
+            <div class="sig-body">
+              <p class="sig-title">
+                Dépôt sauvage de déchets — Plage de Saly Portudal
+              </p>
+              <div class="sig-meta">
+                <span>📍 Saly Portudal</span>
+                <span>📅 8 avril 2025</span>
+                <span>👤 Ibrahima B.</span>
+              </div>
+            </div>
+            <div class="sig-badge resolved">
+              <span class="sig-dot"></span> Résolu
+            </div>
+          </div>
+
+          <div
+            class="sig-item resolved reveal reveal-delay-3 visible"
+            role="listitem"
+          >
+            <div class="sig-icon"><i class="fa-solid fa-droplet"></i></div>
+            <div class="sig-body">
+              <p class="sig-title">
+                Fuite d'eau importante — Quartier Ngaparou, près du marché
+              </p>
+              <div class="sig-meta">
+                <span>📍 Ngaparou</span>
+                <span>📅 2 avril 2025</span>
+                <span>👤 Aïssatou N.</span>
+              </div>
+            </div>
+            <div class="sig-badge resolved">
+              <span class="sig-dot"></span> Résolu
+            </div>
+          </div>
+
+          <div
+            class="sig-item pending reveal reveal-delay-4 visible"
+            role="listitem"
+          >
+            <div class="sig-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="sig-body">
+              <p class="sig-title">
+                Éclairage insuffisant — Carrefour principal de Somone,
+                insécurité nocturne
+              </p>
+              <div class="sig-meta">
+                <span>📍 Somone</span>
+                <span>📅 17 avril 2025</span>
+                <span>👤 Cheikh F.</span>
+              </div>
+            </div>
+            <div class="sig-badge pending">
+              <span class="sig-dot"></span> En attente
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       WHATSAPP SECTION
+  ============================================================ -->
+    <section id="whatsapp" aria-labelledby="whatsapp-title">
+      <div class="container">
+        <div class="wa-inner">
+          <div class="wa-content reveal visible">
+            <div class="section-tag white">
+              <i class="fa-brands fa-whatsapp"></i> Contact direct
+            </div>
+            <h2 class="section-title white-text" id="whatsapp-title">
+              Rejoignez-nous sur<br /><span>WhatsApp</span>
+            </h2>
+            <p class="section-sub white-text" style="margin-bottom: 28px">
+              Pour une réponse rapide et personnalisée, contactez directement la
+              mairie de Saly via notre ligne officielle WhatsApp.
+            </p>
+
+            <div class="wa-phone" aria-label="Numéro WhatsApp officiel">
+              <i class="fa-solid fa-phone-volume"></i> &nbsp; +221 77 263 63 17
+            </div>
+
+            <div class="wa-steps" aria-label="Comment nous contacter">
+              <div class="wa-step">
+                <div class="wa-step-num" aria-hidden="true">1</div>
+                <span>Cliquez sur le bouton WhatsApp ci-contre</span>
+              </div>
+              <div class="wa-step">
+                <div class="wa-step-num" aria-hidden="true">2</div>
+                <span>Décrivez votre demande ou envoyez une photo</span>
+              </div>
+              <div class="wa-step">
+                <div class="wa-step-num" aria-hidden="true">3</div>
+                <span>Notre équipe vous répond dans les 48h ouvrées</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="wa-card reveal reveal-delay-2 visible">
+            <i class="fa-brands fa-whatsapp wa-icon" aria-hidden="true"></i>
+            <h3 class="wa-card-title">Mairie de Saly — Officiel</h3>
+            <p class="wa-card-text">
+              "Bonjour, je souhaite contacter la mairie de Saly concernant…"<br /><br />
+              Notre équipe est disponible du lundi au vendredi, de 8h à 17h.
+            </p>
+            <a
+              href="https://wa.me/221772636317?text=Bonjour%2C+je+souhaite+contacter+la+mairie+de+Saly"
+              target="_blank"
+              rel="noopener"
+              class="wa-big-btn"
+            >
+              <i class="fa-brands fa-whatsapp"></i> &nbsp; Ouvrir la discussion
+            </a>
+            <p
+              style="
+                margin-top: 16px;
+                font-size: 0.78rem;
+                color: rgba(255, 255, 255, 0.55);
+              "
+            >
+              ✅ Ligne officielle vérifiée · 🔒 Conversations sécurisées
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       POURQUOI CETTE PLATEFORME
+  ============================================================ -->
+    <section id="pourquoi" aria-labelledby="pourquoi-title">
+      <div class="container">
+        <div
+          class="section-header reveal visible"
+          style="
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          <div class="section-tag" style="justify-content: center">
+            <i class="fa-solid fa-lightbulb"></i> Notre mission
+          </div>
+          <h2 class="section-title" id="pourquoi-title">
+            Pourquoi cette <span>plateforme</span> ?
+          </h2>
+          <p class="section-sub" style="margin: 0 auto">
+            La Mairie de Saly s'engage à rapprocher l'administration de ses
+            citoyens grâce à des outils numériques modernes et accessibles.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal reveal-delay-1 visible">
+            <div class="why-icon" aria-hidden="true">
+              <i class="fa-solid fa-bolt" style="color: var(--blue)"></i>
+            </div>
+            <h3 class="why-title">Communication rapide</h3>
+            <p class="why-text">
+              Vos signalements parviennent instantanément aux équipes
+              municipales. Fini les longs délais administratifs.
+            </p>
+          </div>
+
+          <div class="why-card reveal reveal-delay-2 visible">
+            <div class="why-icon" aria-hidden="true">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="color: var(--green)"
+              ></i>
+            </div>
+            <h3 class="why-title">Transparence totale</h3>
+            <p class="why-text">
+              Suivez en temps réel l'avancement de chaque signalement. La mairie
+              rend compte de toutes ses actions.
+            </p>
+          </div>
+
+          <div class="why-card reveal reveal-delay-3 visible">
+            <div class="why-icon" aria-hidden="true">
+              <i
+                class="fa-solid fa-handshake"
+                style="color: var(--gold-dark)"
+              ></i>
+            </div>
+            <h3 class="why-title">Réactivité prouvée</h3>
+            <p class="why-text">
+              82% des signalements sont traités en moins de 72h. Nos équipes
+              s'engagent sur des résultats concrets.
+            </p>
+          </div>
+
+          <div class="why-card reveal reveal-delay-4 visible">
+            <div class="why-icon" aria-hidden="true">
+              <i
+                class="fa-solid fa-users-viewfinder"
+                style="color: #f6993f"
+              ></i>
+            </div>
+            <h3 class="why-title">Participation citoyenne</h3>
+            <p class="why-text">
+              Chaque habitant de Saly devient acteur du développement de sa
+              commune. Votre voix compte et fait la différence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header reveal visible">
+          <div class="section-tag">
+            <i class="fa-solid fa-phone"></i> Nous contacter
+          </div>
+          <h2 class="section-title" id="contact-title">
+            Venez nous <span>rendre visite</span>
+          </h2>
+          <p class="section-sub">
+            Notre équipe est à votre disposition. N'hésitez pas à passer à la
+            mairie ou à nous écrire.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Info Column -->
+          <div class="reveal visible">
+            <div class="contact-info-card">
+              <div class="contact-info-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <p class="ci-label">Adresse</p>
+                  <p class="ci-value">
+                    Mairie de Saly<br />Région de Thiès, Sénégal
+                  </p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <p class="ci-label">Téléphone</p>
+                  <p class="ci-value">+221 77 263 63 17</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <p class="ci-label">WhatsApp officiel</p>
+                  <a
+                    href="https://wa.me/221772636317"
+                    target="_blank"
+                    rel="noopener"
+                    class="ci-value"
+                    style="color: var(--blue); font-weight: 600"
+                    >wa.me/221772636317</a
+                  >
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <p class="ci-label">Horaires d'ouverture</p>
+                  <p class="ci-value">
+                    Lun–Ven : 8h00 – 17h00<br />Sam : 9h00 – 13h00
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="map-wrapper">
+              <iframe
+                src="./Mairie de Saly – Plateforme Citoyenne_files/embed.html"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localisation de la Mairie de Saly"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-right reveal reveal-delay-2 visible">
+            <div class="contact-form-card">
+              <div class="form-title">
+                <i
+                  class="fa-solid fa-envelope"
+                  style="color: var(--green-dark); margin-right: 10px"
+                ></i>
+                Envoyer un message
+              </div>
+              <form id="contactForm" novalidate="">
+                <div class="form-grid">
+                  <div class="form-row">
+                    <label class="form-label" for="ct-nom"
+                      >Nom <span>*</span></label
+                    >
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="ct-nom"
+                      placeholder="Votre nom"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-row">
+                    <label class="form-label" for="ct-prenom">Prénom</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="ct-prenom"
+                      placeholder="Votre prénom"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label class="form-label" for="ct-email"
+                    >Email <span>*</span></label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="ct-email"
+                    placeholder="vous@exemple.com"
+                    required=""
+                  />
+                </div>
+                <div class="form-row">
+                  <label class="form-label" for="ct-tel">Téléphone</label>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="ct-tel"
+                    placeholder="+221 7X XXX XX XX"
+                  />
+                </div>
+                <div class="form-row">
+                  <label class="form-label" for="ct-sujet"
+                    >Sujet <span>*</span></label
+                  >
+                  <select class="form-select" id="ct-sujet" required="">
+                    <option value="">-- Choisissez un sujet --</option>
+                    <option>Demande d'informations</option>
+                    <option>État civil &amp; documents</option>
+                    <option>Permis &amp; autorisations</option>
+                    <option>Plainte ou réclamation</option>
+                    <option>Partenariat</option>
+                    <option>Autre</option>
+                  </select>
+                </div>
+                <div class="form-row">
+                  <label class="form-label" for="ct-msg"
+                    >Message <span>*</span></label
+                  >
+                  <textarea
+                    class="form-textarea"
+                    id="ct-msg"
+                    placeholder="Votre message..."
+                    required=""
+                    style="min-height: 130px"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="form-submit"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      var(--green-dark),
+                      var(--green)
+                    );
+                  "
+                >
+                  <i class="fa-solid fa-paper-plane"></i> &nbsp; Envoyer le
+                  message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer id="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-top">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="footer-logo-icon" aria-hidden="true">
+                <i
+                  class="fa-solid fa-building-columns"
+                  style="color: white"
+                ></i>
+              </div>
+              <div class="footer-logo-text">
+                <strong>Mairie de Saly</strong>
+                <span>Plateforme Citoyenne</span>
+              </div>
+            </div>
+            <p class="footer-desc">
+              La mairie de Saly s'engage à offrir des services publics modernes,
+              transparents et accessibles à l'ensemble des citoyens de la
+              commune.
+            </p>
+            <div class="footer-socials" aria-label="Réseaux sociaux">
+              <a href="#" class="footer-social" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="footer-social" aria-label="Twitter / X"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" class="footer-social" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://wa.me/221772636317"
+                target="_blank"
+                rel="noopener"
+                class="footer-social"
+                aria-label="WhatsApp"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Liens rapides -->
+          <div>
+            <h3 class="footer-col-title">Navigation</h3>
+            <ul class="footer-links" role="list">
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#accueil"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="file:///C:/Users/papea/Downloads/index_3.html#actualites"
+                  >Actualités</a
+                >
+              </li>
+              <li>
+                <a
+                  href="file:///C:/Users/papea/Downloads/index_3.html#signalement"
+                  >Signalement</a
+                >
+              </li>
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#suivi"
+                  >Suivi des actions</a
+                >
+              </li>
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h3 class="footer-col-title">Services</h3>
+            <ul class="footer-links" role="list">
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#"
+                  >État civil</a
+                >
+              </li>
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#"
+                  >Permis de construire</a
+                >
+              </li>
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#"
+                  >Urbanisme</a
+                >
+              </li>
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#"
+                  >Marchés publics</a
+                >
+              </li>
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#"
+                  >Tourisme local</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Légal -->
+          <div>
+            <h3 class="footer-col-title">Informations</h3>
+            <ul class="footer-links" role="list">
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#"
+                  >Conseil municipal</a
+                >
+              </li>
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#"
+                  >Budget communal</a
+                >
+              </li>
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#"
+                  >Délibérations</a
+                >
+              </li>
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#"
+                  >Mentions légales</a
+                >
+              </li>
+              <li>
+                <a href="file:///C:/Users/papea/Downloads/index_3.html#"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © 2025 Mairie de Saly – Région de Thiès, Sénégal. Tous droits
+            réservés.
+          </p>
+          <p class="made-with">
+            <span aria-hidden="true">🇸🇳</span> Fait avec fierté à Saly, Sénégal
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+    <script>
+      "use strict";
+
+      /* ---- UTILITY ---- */
+      const $ = (id) => document.getElementById(id);
+      const qs = (sel) => document.querySelector(sel);
+
+      /* ---- HEADER SCROLL EFFECT ---- */
+      const header = $("header") || qs("#header");
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+        },
+        { passive: true },
+      );
+
+      /* ---- BACK TO TOP ---- */
+      const backTop = $("backTop");
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (window.scrollY > 400) {
+            backTop.classList.add("show");
+          } else {
+            backTop.classList.remove("show");
+          }
+        },
+        { passive: true },
+      );
+      backTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      /* ---- BURGER MENU ---- */
+      const burgerBtn = $("burgerBtn");
+      const mobileNav = $("mobileNav");
+
+      burgerBtn.addEventListener("click", () => {
+        const isOpen = burgerBtn.classList.toggle("open");
+        burgerBtn.setAttribute("aria-expanded", isOpen);
+        if (isOpen) {
+          mobileNav.classList.add("open");
+          document.body.style.overflow = "hidden";
+        } else {
+          mobileNav.classList.remove("open");
+          document.body.style.overflow = "";
+        }
+      });
+
+      // Close mobile nav on link click
+      document.querySelectorAll(".mobile-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          burgerBtn.classList.remove("open");
+          burgerBtn.setAttribute("aria-expanded", "false");
+          mobileNav.classList.remove("open");
+          document.body.style.overflow = "";
+        });
+      });
+
+      /* ---- SCROLL REVEAL ---- */
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -60px 0px" },
+      );
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => revealObserver.observe(el));
+
+      /* ---- ACTIVE NAV LINK ON SCROLL ---- */
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-links a");
+
+      const navObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.id;
+              navLinks.forEach((link) => {
+                link.classList.toggle(
+                  "active",
+                  link.getAttribute("href") === "#" + id,
+                );
+              });
+            }
+          });
+        },
+        { threshold: 0.4 },
+      );
+
+      sections.forEach((sec) => navObserver.observe(sec));
+
+      /* ---- TOAST NOTIFICATION ---- */
+      function showToast(msg, duration = 3500) {
+        const toast = $("toast");
+        $("toast-msg").textContent = msg;
+        toast.classList.add("show");
+        setTimeout(() => toast.classList.remove("show"), duration);
+      }
+
+      /* ---- MODAL ---- */
+      const modalOverlay = $("modalOverlay");
+      const modalClose = $("modalClose");
+
+      function showModal() {
+        modalOverlay.classList.add("show");
+        document.body.style.overflow = "hidden";
+      }
+      function hideModal() {
+        modalOverlay.classList.remove("show");
+        document.body.style.overflow = "";
+      }
+
+      modalClose.addEventListener("click", hideModal);
+      modalOverlay.addEventListener("click", (e) => {
+        if (e.target === modalOverlay) hideModal();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") hideModal();
+      });
+
+      /* ---- FORM VALIDATION HELPER ---- */
+      function validateForm(form) {
+        let valid = true;
+        form.querySelectorAll("[required]").forEach((field) => {
+          const ok = field.value.trim() !== "";
+          field.style.borderColor = ok ? "" : "#E53E3E";
+          field.style.boxShadow = ok ? "" : "0 0 0 3px rgba(229,62,62,0.15)";
+          if (!ok) valid = false;
+        });
+        return valid;
+      }
+
+      function resetFieldStyles(form) {
+        form.querySelectorAll("[required]").forEach((field) => {
+          field.addEventListener(
+            "input",
+            () => {
+              field.style.borderColor = "";
+              field.style.boxShadow = "";
+            },
+            { once: true },
+          );
+        });
+      }
+
+      /* ---- SIGNALEMENT FORM ---- */
+      const signalForm = $("signalForm");
+      signalForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (!validateForm(signalForm)) {
+          resetFieldStyles(signalForm);
+          showToast("⚠️ Veuillez remplir tous les champs obligatoires.", 3000);
+          return;
+        }
+
+        const btn = signalForm.querySelector(".form-submit");
+        btn.disabled = true;
+        btn.innerHTML =
+          '<i class="fa-solid fa-spinner fa-spin"></i> &nbsp; Envoi en cours…';
+
+        // Simulate API call
+        await new Promise((r) => setTimeout(r, 1800));
+
+        btn.disabled = false;
+        btn.innerHTML = "<span>📤</span> Envoyer le signalement";
+        signalForm.reset();
+        showModal();
+      });
+
+      /* ---- CONTACT FORM ---- */
+      const contactForm = $("contactForm");
+      contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (!validateForm(contactForm)) {
+          resetFieldStyles(contactForm);
+          showToast("⚠️ Veuillez remplir tous les champs obligatoires.", 3000);
+          return;
+        }
+
+        const btn = contactForm.querySelector(".form-submit");
+        btn.disabled = true;
+        btn.innerHTML =
+          '<i class="fa-solid fa-spinner fa-spin"></i> &nbsp; Envoi en cours…';
+
+        await new Promise((r) => setTimeout(r, 1500));
+
+        btn.disabled = false;
+        btn.innerHTML =
+          '<i class="fa-solid fa-paper-plane"></i> Envoyer le message';
+        contactForm.reset();
+        showToast(
+          "✅ Message envoyé ! Nous vous répondrons dans les 48h.",
+          4000,
+        );
+      });
+
+      /* ---- UPLOAD ZONE ---- */
+      const uploadZone = $("uploadZone");
+      const sigPhoto = $("sig-photo");
+
+      uploadZone.addEventListener("click", () => sigPhoto.click());
+      uploadZone.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") sigPhoto.click();
+      });
+
+      sigPhoto.addEventListener("change", () => {
+        if (sigPhoto.files.length > 0) {
+          const fname = sigPhoto.files[0].name;
+          uploadZone.innerHTML = `
+          <div class="ico"><i class="fa-solid fa-circle-check" style="color:var(--green)"></i></div>
+          <p><strong>${fname}</strong></p>
+          <p style="margin-top:4px; font-size:0.75rem; color:var(--green);">Photo sélectionnée avec succès</p>
+        `;
+          uploadZone.style.borderColor = "var(--green)";
+          uploadZone.style.background = "rgba(32,201,151,0.04)";
+        }
+      });
+
+      // Drag & drop
+      uploadZone.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        uploadZone.style.borderColor = "var(--blue)";
+        uploadZone.style.background = "rgba(11,94,215,0.05)";
+      });
+      uploadZone.addEventListener("dragleave", () => {
+        uploadZone.style.borderColor = "";
+        uploadZone.style.background = "";
+      });
+      uploadZone.addEventListener("drop", (e) => {
+        e.preventDefault();
+        const file = e.dataTransfer.files[0];
+        if (file && file.type.startsWith("image/")) {
+          uploadZone.innerHTML = `
+          <div class="ico"><i class="fa-solid fa-circle-check" style="color:var(--green)"></i></div>
+          <p><strong>${file.name}</strong></p>
+          <p style="margin-top:4px; font-size:0.75rem; color:var(--green);">Photo déposée avec succès</p>
+        `;
+          uploadZone.style.borderColor = "var(--green)";
+          uploadZone.style.background = "rgba(32,201,151,0.04)";
+        }
+      });
+
+      /* ---- SIGNAL TYPE CARD INTERACTION ---- */
+      document.querySelectorAll(".signal-type").forEach((card) => {
+        card.addEventListener("click", () => {
+          const text = card.querySelector("span:not(.ico)") || card.lastChild;
+          const select = $("sig-type");
+          if (select && card.textContent) {
+            // Try to match the category
+            const txt = card.textContent.trim();
+            for (const opt of select.options) {
+              if (opt.text.includes(txt.replace(/[^\w]/g, "").slice(0, 5))) {
+                select.value = opt.value;
+                break;
+              }
+            }
+            select.scrollIntoView({ behavior: "smooth", block: "center" });
+            select.focus();
+            select.style.borderColor = "var(--blue)";
+            setTimeout(() => {
+              select.style.borderColor = "";
+            }, 1500);
+          }
+        });
+      });
+
+      /* ---- SMOOTH SCROLL for anchor links ---- */
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (e) => {
+          const target = document.querySelector(link.getAttribute("href"));
+          if (target) {
+            e.preventDefault();
+            const offset = 80;
+            const top =
+              target.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top, behavior: "smooth" });
+          }
+        });
+      });
+
+      /* ---- SPIN KEYFRAME ---- */
+      const style = document.createElement("style");
+      style.textContent = `@keyframes spin { to { transform: rotate(360deg); } }`;
+      document.head.appendChild(style);
+
+      /* ---- HERO PARALLAX (subtle) ---- */
+      const heroBg = document.querySelector(".hero-bg");
+      if (heroBg) {
+        window.addEventListener(
+          "scroll",
+          () => {
+            const y = window.scrollY;
+            if (y < window.innerHeight) {
+              heroBg.style.transform = `translateY(${y * 0.25}px)`;
+            }
+          },
+          { passive: true },
+        );
+      }
+
+      /* ---- COUNTER ANIMATION ---- */
+      function animateCounter(el, target, duration = 1500) {
+        const start = Date.now();
+        const update = () => {
+          const now = Date.now();
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = Math.round(eased * target);
+          el.textContent =
+            current.toLocaleString("fr-FR") + (el.dataset.suffix || "");
+          if (progress < 1) requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+      }
+
+      // Observe hero stats
+      const statsObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target
+                .querySelectorAll(".hero-stat strong")
+                .forEach((el) => {
+                  const raw = el.textContent.replace(/[^0-9]/g, "");
+                  const suffix = el.textContent.replace(/[0-9,]/g, "");
+                  const num = parseInt(raw, 10);
+                  if (!isNaN(num)) {
+                    el.dataset.suffix = suffix;
+                    animateCounter(el, num);
+                  }
+                });
+              statsObs.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+
+      const heroStats = qs(".hero-stats");
+      if (heroStats) statsObs.observe(heroStats);
+
+      console.log("🏛️ Mairie de Saly — Plateforme citoyenne initialisée");
+    </script>
+  </body>
+</html>
