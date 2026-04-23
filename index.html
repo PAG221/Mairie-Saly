@@ -1726,6 +1726,52 @@
         transform: translateX(0);
       }
 
+      /* ---- CUSTOM LANGUAGE SWITCHER ---- */
+      .lang-switcher {
+        display: flex;
+        align-items: center;
+        background: var(--off-white);
+        border: 1px solid var(--border);
+        border-radius: 50px;
+        padding: 4px;
+        gap: 2px;
+        margin-right: 8px;
+      }
+
+      .lang-btn {
+        padding: 6px 12px;
+        border-radius: 50px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--text-muted);
+        transition: var(--transition);
+        background: transparent;
+      }
+
+      .lang-btn.active {
+        background: var(--white);
+        color: var(--blue);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .lang-btn:hover:not(.active) {
+        color: var(--blue);
+      }
+
+      /* Masquer le widget Google original */
+      #google_translate_element {
+        display: none;
+      }
+      .goog-te-banner-frame {
+        display: none !important;
+      }
+      .skiptranslate {
+        display: none !important;
+      }
+      body {
+        top: 0px !important;
+      }
+
       /* ============================================================
        RESPONSIVE
     ============================================================ */
@@ -1752,6 +1798,10 @@
         }
         .burger {
           display: flex;
+        }
+        .lang-switcher {
+          margin-right: 0;
+          display: flex; /* Visible sur mobile */
         }
 
         #actualites,
@@ -1972,6 +2022,23 @@
 
           <!-- Actions -->
           <div class="nav-actions">
+            <div class="lang-switcher">
+              <button
+                class="lang-btn active"
+                id="btn-fr"
+                onclick="changeLanguage('fr')"
+              >
+                FR
+              </button>
+              <button
+                class="lang-btn"
+                id="btn-en"
+                onclick="changeLanguage('en')"
+              >
+                EN
+              </button>
+            </div>
+            <div id="google_translate_element"></div>
             <a
               href="https://wa.me/221772636317?text=Bonjour%2C+je+souhaite+contacter+la+mairie+de+Saly"
               target="_blank"
@@ -3488,6 +3555,31 @@
       if (heroStats) statsObs.observe(heroStats);
 
       console.log("🏛️ Mairie de Saly — Plateforme citoyenne initialisée");
+
+      /* ---- LOGIQUE DE TRADUCTION (FR/EN) ---- */
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "fr",
+            includedLanguages: "fr,en",
+          },
+          "google_translate_element",
+        );
+      }
+
+      function changeLanguage(lang) {
+        const select = document.querySelector(".goog-te-combo");
+        if (select) {
+          select.value = lang;
+          select.dispatchEvent(new Event("change"));
+        }
+        // Mise à jour visuelle des boutons
+        document
+          .querySelectorAll(".lang-btn")
+          .forEach((btn) => btn.classList.remove("active"));
+        document.getElementById("btn-" + lang).classList.add("active");
+      }
     </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>
